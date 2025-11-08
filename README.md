@@ -1,10 +1,10 @@
-# AnchorGen
+# SolAnchorGen
 
-A scaffolding tool that generates boilerplate Anchor programs with common patterns and best practices.
+A command-line scaffolding tool that generates boilerplate Anchor programs with common patterns and best practices.
 
 ## Overview
 
-AnchorGen accelerates Solana program development by providing production-ready templates for common use cases, saving hours of setup time.
+SolAnchorGen accelerates Solana program development by providing production-ready templates for common use cases, saving hours of setup time. Built with TypeScript and powered by pnpm.
 
 ## Features
 
@@ -24,32 +24,48 @@ AnchorGen accelerates Solana program development by providing production-ready t
 - **Marketplace** - Buy/sell NFTs with royalties
 - **Vault** - Secure token custody with multi-sig
 
+## Prerequisites
+
+- Node.js >= 18.0.0
+- pnpm (required package manager)
+- Anchor framework (for building generated programs)
+
 ## Installation
 
 ```bash
-npm install -g anchorgen
+# Install pnpm if not already installed
+npm install -g pnpm
+
+# Clone and build the project
+git clone <repository-url>
+cd SolAnchorGen
+pnpm install
+pnpm build
+
+# Link globally for CLI usage
+pnpm link --global
 ```
 
 ## Usage
 
 ```bash
 # Interactive mode
-anchorgen init
+sol-anchor-gen init
 
 # Generate specific template
-anchorgen new --template nft-minting my-nft-program
+sol-anchor-gen new --template nft-minting my-nft-program
 
 # List all available templates
-anchorgen list
+sol-anchor-gen list
 
 # Generate with custom options
-anchorgen new --template staking --token-decimals 9 my-staking-program
+sol-anchor-gen new --template staking --token-decimals 9 my-staking-program
 ```
 
 ## Example
 
 ```bash
-$ anchorgen new --template nft-minting my-collection
+$ sol-anchor-gen new --template nft-minting my-collection
 
 ✓ Created Anchor workspace
 ✓ Generated program code
@@ -64,6 +80,29 @@ Next steps:
   anchor test
 ```
 
+## Development
+
+```bash
+# Install dependencies
+pnpm install
+
+# Build the project
+pnpm build
+
+# Watch mode for development
+pnpm dev
+
+# Run the CLI locally
+pnpm start
+
+# Link for global usage
+pnpm link --global
+```
+
+## Project Status
+
+🚧 **Currently in development** - Core infrastructure is set up. Template implementations are in progress.
+
 ## Template Structure
 
 Each template includes:
@@ -72,6 +111,22 @@ Each template includes:
 - Comprehensive test suite
 - Deployment scripts
 - Documentation
+
+## Project Structure
+
+```
+SolAnchorGen/
+├── src/
+│   ├── cli/          # CLI infrastructure (commander, prompts)
+│   ├── commands/     # Command handlers (init, new, list)
+│   ├── generator/    # Workspace generation orchestration
+│   ├── templates/    # Template implementations
+│   ├── utils/        # Utilities (fs, validation, progress)
+│   └── index.ts      # CLI entry point
+├── dist/             # Compiled output
+├── package.json      # Project configuration
+└── tsconfig.json     # TypeScript configuration
+```
 
 ## Contributing
 
