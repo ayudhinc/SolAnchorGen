@@ -1,0 +1,39 @@
+{
+  "name": "sol-anchor-gen",
+  "version": "0.1.0",
+  "description": "CLI tool for generating Anchor program scaffolding for Solana development",
+  "main": "dist/index.js",
+  "bin": {
+    "sol-anchor-gen": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/index.js",
+    "link": "pnpm link --global",
+    "unlink": "pnpm unlink --global"
+  },
+  "keywords": [
+    "solana",
+    "anchor",
+    "cli",
+    "scaffold",
+    "generator",
+    "blockchain"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^11.1.0",
+    "inquirer": "^9.2.12",
+    "chalk": "^4.1.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@types/inquirer": "^9.0.7",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
