@@ -6,12 +6,25 @@
  */
 
 import { createProgram } from './cli/commander.js';
+import { displayLogo } from './utils/logo.js';
 
 /**
  * Main function that initializes and runs the CLI
  */
 async function main(): Promise<void> {
   try {
+    // Display logo when no arguments or only help/version flags
+    const args = process.argv.slice(2);
+    const shouldShowLogo = args.length === 0 || 
+                          args.includes('--help') || 
+                          args.includes('-h') ||
+                          args.includes('--version') ||
+                          args.includes('-V');
+    
+    if (shouldShowLogo) {
+      displayLogo();
+    }
+
     const program = createProgram();
 
     // Register commands here (will be added in later tasks)
