@@ -32,7 +32,7 @@
   - Add input validation to prompts with error messages
   - _Requirements: 1.1, 1.2, 1.4, 1.5_
 
-- [ ] 3. Implement validation utilities
+- [x] 3. Implement validation utilities
   - Create src/utils/validator.ts with Validator class
   - Implement validateProjectName with rules for valid directory names
   - Implement validateTemplateName that checks against registry
