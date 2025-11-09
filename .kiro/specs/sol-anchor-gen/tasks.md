@@ -40,17 +40,17 @@
   - Implement validatePath for file system path validation
   - _Requirements: 1.5, 2.4, 9.3_
 
-- [ ] 4. Implement template registry system
+- [x] 4. Implement template registry system
   - _Requirements: 2.2, 3.1, 3.2, 3.3_
 
-- [ ] 4.1 Create template registry core
+- [x] 4.1 Create template registry core
   - Implement src/templates/registry.ts with TemplateRegistry class
   - Create Template and TemplateOption interfaces
   - Implement registerTemplate, getTemplate, getAllTemplates methods
   - Implement getTemplateOptions method for retrieving template configuration options
   - _Requirements: 2.2, 3.1, 3.2, 3.3_
 
-- [ ] 4.2 Create template generator interface
+- [x] 4.2 Create template generator interface
   - Implement src/templates/generator.ts with TemplateGenerator interface
   - Define GeneratorContext and GeneratedFile interfaces
   - Define Dependencies type for package management
