@@ -111,7 +111,7 @@
   - Display success message with next steps
   - _Requirements: 1.1, 1.2, 1.3, 1.4, 1.5, 11.1, 11.2_
 
-- [ ] 11. Implement new command
+- [x] 11. Implement new command
   - Create src/commands/new.ts with newCommand function
   - Accept projectName as positional argument
   - Accept template via --template flag
