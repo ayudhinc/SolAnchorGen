@@ -122,7 +122,7 @@
   - Display progress and success message
   - _Requirements: 2.1, 2.2, 2.3, 2.4, 2.5, 11.1, 11.2_
 
-- [ ] 12. Implement NFT minting template
+- [x] 12. Implement NFT minting template
   - Create src/templates/nft-minting/generator.ts implementing TemplateGenerator
   - Implement generate method returning all required files
   - Create generateProgramCode with Rust code for NFT minting program including mint instruction, metadata handling, and account structures
