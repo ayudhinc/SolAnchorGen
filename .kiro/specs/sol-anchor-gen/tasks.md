@@ -8,24 +8,24 @@
   - Install core dependencies: commander, inquirer, chalk for CLI functionality
   - _Requirements: 7.1, 7.2, 7.3, 10.1, 10.4, 10.5_
 
-- [ ] 2. Implement core CLI infrastructure
+- [x] 2. Implement core CLI infrastructure
   - _Requirements: 1.1, 2.1, 3.1, 12.1, 12.2, 12.3, 12.4_
 
-- [ ] 2.1 Create CLI entry point and command parser
+- [x] 2.1 Create CLI entry point and command parser
   - Write src/index.ts with main function that initializes Commander program
   - Implement src/cli/commander.ts with createProgram and addCommand functions
   - Configure Commander with program name, version, and description
   - Add global error handling for uncaught exceptions
   - _Requirements: 1.1, 2.1, 3.1, 12.1_
 
-- [ ] 2.2 Implement help command and documentation display
+- [x] 2.2 Implement help command and documentation display
   - Configure Commander help output formatting
   - Add command examples to help text
   - Implement detailed help for individual commands with --help flag
   - Display available flags and options in help output
   - _Requirements: 12.1, 12.2, 12.3, 12.4_
 
-- [ ] 2.3 Create interactive prompt handler
+- [x] 2.3 Create interactive prompt handler
   - Implement src/cli/prompts.ts with promptUser function using Inquirer.js
   - Create promptForTemplate function that displays template choices
   - Create promptForTemplateOptions function for template-specific configuration

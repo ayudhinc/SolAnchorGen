@@ -2,6 +2,7 @@
   "name": "sol-anchor-gen",
   "version": "0.1.0",
   "description": "CLI tool for generating Anchor program scaffolding for Solana development",
+  "type": "module",
   "main": "dist/index.js",
   "bin": {
     "sol-anchor-gen": "./dist/index.js"
