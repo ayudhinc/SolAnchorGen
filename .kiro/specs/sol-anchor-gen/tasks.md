@@ -92,7 +92,7 @@
   - Add cleanup logic for failed generation attempts
   - _Requirements: 10.1, 10.2, 10.3, 10.4, 10.5, 7.1, 7.2_
 
-- [ ] 9. Implement list command
+- [x] 9. Implement list command
   - Create src/commands/list.ts with listCommand function
   - Retrieve all templates from TemplateRegistry
   - Format template information in readable table using cli-table3 or similar
