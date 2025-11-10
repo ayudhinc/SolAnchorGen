@@ -156,7 +156,7 @@
   - Include proper account validation and state management
   - _Requirements: 4.1, 4.2, 4.3, 4.4, 5.1, 5.2, 5.3, 5.4, 5.5, 6.1, 6.2, 6.3, 6.4, 8.1, 8.2, 8.3, 8.4_
 
-- [ ] 15. Implement governance template
+- [x] 15. Implement governance template
   - Create src/templates/governance/generator.ts implementing TemplateGenerator
   - Implement generate method for governance pattern
   - Create generateProgramCode with Rust code for governance including proposal creation, voting, and execution
