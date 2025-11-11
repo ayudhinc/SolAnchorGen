@@ -199,7 +199,7 @@
   - Export configured registry for use in commands
   - _Requirements: 2.2, 3.1, 3.2, 3.3, 9.1, 9.4_
 
-- [ ] 19. Wire commands to CLI program
+- [x] 19. Wire commands to CLI program
   - Import all command handlers in src/index.ts
   - Register init command with Commander
   - Register new command with Commander including all option flags
