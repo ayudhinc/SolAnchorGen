@@ -8,12 +8,16 @@ SolAnchorGen accelerates Solana program development by providing production-read
 
 ## Features
 
-- 🚀 Quick scaffolding of Anchor programs
-- 📦 Pre-built templates for common patterns
-- ✅ Best practices and security patterns included
-- 🧪 Test suites included with each template
-- 📚 Comprehensive inline documentation
-- 🔧 Customizable configuration
+- 🚀 **Quick Scaffolding** - Generate complete Anchor programs in seconds
+- 📦 **6 Production-Ready Templates** - NFT, Staking, Escrow, Governance, Marketplace, Vault
+- ✅ **Security Best Practices** - Built-in validation, overflow protection, access control
+- 🧪 **Comprehensive Tests** - Full test coverage with Mocha/Chai
+- 📚 **Complete Documentation** - Inline comments, README, and usage examples
+- 🔧 **Customizable Options** - Template-specific configuration (e.g., token decimals)
+- 💻 **TypeScript SDK** - Client libraries for easy program interaction
+- 🎨 **Beautiful CLI** - Colorful output with progress indicators and spinners
+- 📋 **Interactive Mode** - Step-by-step project creation with prompts
+- ⚡ **Fast Setup** - pnpm for lightning-fast dependency installation
 
 ## Available Templates
 
@@ -30,20 +34,48 @@ SolAnchorGen accelerates Solana program development by providing production-read
 - pnpm (required package manager)
 - Anchor framework (for building generated programs)
 
-## Installation
+## Quick Start
 
 ```bash
-# Install pnpm if not already installed
+# 1. Install pnpm if not already installed
 npm install -g pnpm
 
-# Clone and build the project
+# 2. Clone and build the project
 git clone <repository-url>
 cd SolAnchorGen
 pnpm install
 pnpm build
 
-# Link globally for CLI usage
+# 3. Link globally for CLI usage
 pnpm link --global
+
+# 4. Generate your first project
+sol-anchor-gen list                                    # See all templates
+sol-anchor-gen init                                    # Interactive mode
+sol-anchor-gen new --template nft-minting my-project   # Direct generation
+```
+
+## Installation
+
+The CLI can be installed globally using pnpm:
+
+```bash
+# Install pnpm
+npm install -g pnpm
+
+# Clone repository
+git clone <repository-url>
+cd SolAnchorGen
+
+# Install dependencies and build
+pnpm install
+pnpm build
+
+# Link globally
+pnpm link --global
+
+# Verify installation
+sol-anchor-gen --version
 ```
 
 ## Usage
@@ -101,16 +133,60 @@ pnpm link --global
 
 ## Project Status
 
-🚧 **Currently in development** - Core infrastructure is set up. Template implementations are in progress.
+✅ **Production Ready** - All 6 templates are fully implemented with production-ready Rust programs, comprehensive tests, TypeScript SDKs, and detailed documentation.
 
 ## Template Structure
 
 Each template includes:
-- Program code with security checks
-- Client-side TypeScript SDK
-- Comprehensive test suite
-- Deployment scripts
-- Documentation
+- **Rust Program Code** - Production-ready Anchor programs with:
+  - Security best practices (account validation, signer checks, overflow protection)
+  - Custom error types with descriptive messages
+  - Event emissions for tracking
+  - Inline comments explaining security considerations
+- **TypeScript SDK** - Client library for easy program interaction
+- **Comprehensive Test Suite** - Full test coverage with Mocha/Chai
+- **Anchor Configuration** - Pre-configured Anchor.toml
+- **Package Configuration** - Ready-to-use package.json with pnpm
+- **Documentation** - Detailed README with usage examples and deployment instructions
+
+## Template Details
+
+### NFT Minting
+- Initialize NFT collections with metadata
+- Mint individual NFTs with unique URIs
+- SPL Token integration
+- Collection tracking
+
+### Token Staking
+- Configurable token decimals
+- Time-based reward calculation
+- Stake/unstake functionality
+- Reward claiming with automatic distribution
+
+### Escrow
+- Peer-to-peer token swaps
+- PDA-based vault for security
+- Initialize, exchange, and cancel operations
+- Atomic swap execution
+
+### Governance
+- DAO initialization with custom parameters
+- Proposal creation and voting
+- Token-weighted voting system
+- Quorum and approval threshold validation
+- Execution delay for security
+
+### Marketplace
+- List NFTs with custom pricing
+- Automatic royalty distribution (up to 50%)
+- Buy, cancel, and update listing operations
+- Creator royalty support
+
+### Vault
+- Multi-signature authorization (M-of-N)
+- Configurable guardian threshold
+- Withdrawal proposal and approval workflow
+- Secure token custody
 
 ## Project Structure
 
