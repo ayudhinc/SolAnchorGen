@@ -1,29 +1,55 @@
 {
   "name": "sol-anchor-gen",
   "version": "0.1.0",
-  "description": "CLI tool for generating Anchor program scaffolding for Solana development",
+  "description": "CLI tool for generating Anchor program scaffolding for Solana development with production-ready templates",
   "type": "module",
   "main": "dist/index.js",
   "bin": {
-    "sol-anchor-gen": "./dist/index.js"
+    "sol-anchor-gen": "dist/index.js"
   },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "build": "tsc",
     "dev": "tsc --watch",
     "start": "node dist/index.js",
     "link": "pnpm link --global",
-    "unlink": "pnpm unlink --global"
+    "unlink": "pnpm unlink --global",
+    "prepublishOnly": "pnpm build"
   },
   "keywords": [
     "solana",
     "anchor",
+    "anchor-framework",
     "cli",
     "scaffold",
+    "scaffolding",
     "generator",
-    "blockchain"
+    "blockchain",
+    "web3",
+    "nft",
+    "staking",
+    "defi",
+    "dao",
+    "governance",
+    "smart-contracts",
+    "solana-program",
+    "template",
+    "boilerplate"
   ],
-  "author": "",
+  "author": "Dushyant Kashyap <dushyant@ayudh.ai>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ayudhinc/SolAnchorGen.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ayudhinc/SolAnchorGen/issues"
+  },
+  "homepage": "https://github.com/ayudhinc/SolAnchorGen#readme",
   "dependencies": {
     "chalk": "^5.6.2",
     "cli-table3": "0.6.5",
@@ -37,6 +63,7 @@
     "typescript": "^5.9.3"
   },
   "engines": {
-    "node": ">=18.0.0"
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
   }
 }

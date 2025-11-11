@@ -51,7 +51,7 @@ SolAnchorGen accelerates Solana program development by providing production-read
 npm install -g pnpm
 
 # 2. Clone and build the project
-git clone <repository-url>
+git clone https://github.com/ayudhinc/SolAnchorGen.git
 cd SolAnchorGen
 pnpm install
 pnpm build
@@ -67,14 +67,27 @@ sol-anchor-gen new --template nft-minting my-project   # Direct generation
 
 ## Installation
 
-The CLI can be installed globally using pnpm:
+### Option 1: Install from npm (Recommended)
+
+Install globally from npm:
+
+```bash
+npm install -g sol-anchor-gen
+
+# Verify installation
+sol-anchor-gen --version
+```
+
+### Option 2: Install from source
+
+Clone and build from source:
 
 ```bash
 # Install pnpm
 npm install -g pnpm
 
 # Clone repository
-git clone <repository-url>
+git clone https://github.com/ayudhinc/SolAnchorGen.git
 cd SolAnchorGen
 
 # Install dependencies and build
@@ -212,6 +225,24 @@ SolAnchorGen/
 ├── dist/             # Compiled output
 ├── package.json      # Project configuration
 └── tsconfig.json     # TypeScript configuration
+```
+
+## Publishing to npm
+
+To publish this package to npm:
+
+```bash
+# 1. Ensure you're logged in to npm
+npm login
+
+# 2. Build the project
+pnpm build
+
+# 3. Publish to npm (prepublishOnly script will run automatically)
+npm publish
+
+# Or for a dry run to see what would be published
+npm publish --dry-run
 ```
 
 ## Contributing
