@@ -1,5 +1,15 @@
 # SolAnchorGen
 
+```
+   _____ ____  __       ___                __                 ______
+  / ___// __ \/ /      /   |  ____  _____/ /_  ____  _____  / ____/__  ____
+  \__ \/ / / / /      / /| | / __ \/ ___/ __ \/ __ \/ ___/ / / __/ _ \/ __ \
+ ___/ / /_/ / /___   / ___ |/ / / / /__/ / / / /_/ / /    / /_/ /  __/ / / /
+/____/\____/_____/  /_/  |_/_/ /_/\___/_/ /_/\____/_/     \____/\___/_/ /_/
+```
+
+⚡ **Scaffold Solana Anchor programs with production-ready templates**
+
 A command-line scaffolding tool that generates boilerplate Anchor programs with common patterns and best practices.
 
 ## Overview
